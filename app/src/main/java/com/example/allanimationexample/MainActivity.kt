@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -30,6 +31,22 @@ class MainActivity : AppCompatActivity() {
             btnFade.setOnClickListener {
                 fade()
             }
+            btnBackgroundColor.setOnClickListener {
+                colorizer()
+            }
+        }
+
+    }
+
+    private fun colorizer() {
+        val animator=ObjectAnimator.ofArgb(binding.imgStar.parent,
+            "backgroundColor",Color.BLACK,Color.RED)
+        animator.apply {
+            duration=800
+            repeatCount=1
+            repeatMode=ObjectAnimator.REVERSE
+            disableViewDuringAnimation(binding.btnBackgroundColor)
+            start()
         }
 
     }
