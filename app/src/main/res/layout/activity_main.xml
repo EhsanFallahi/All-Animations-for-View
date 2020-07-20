@@ -123,19 +123,17 @@
                 android:id="@+id/btn_shower"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
                 android:background="@drawable/bg_button"
                 android:padding="12dp"
                 android:text="Shower"
                 android:textAllCaps="false"
                 android:textColor="#C51162"
                 android:textSize="22sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_background_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/btn_background_color"
-                app:layout_constraintTop_toTopOf="@+id/guideline2"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toTopOf="@+id/btn_background_color" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
