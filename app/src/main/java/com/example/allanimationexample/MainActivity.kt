@@ -3,6 +3,7 @@ package com.example.allanimationexample
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
+import android.animation.PropertyValuesHolder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,8 +24,24 @@ class MainActivity : AppCompatActivity() {
             btnTranslate.setOnClickListener {
                 translater()
             }
+            btnScale.setOnClickListener {
+                scale()
+            }
         }
 
+    }
+
+    private fun scale() {
+        val scaleX=PropertyValuesHolder.ofFloat(View.SCALE_X,4f)
+        val scaleY=PropertyValuesHolder.ofFloat(View.SCALE_Y,4f)
+        val animator=ObjectAnimator.ofPropertyValuesHolder(binding.imgStar,scaleX,scaleY)
+        animator.apply {
+            duration=1000
+            repeatCount=1
+            repeatMode=ObjectAnimator.REVERSE
+            disableViewDuringAnimation(binding.btnScale)
+            start()
+        }
     }
 
     private fun ObjectAnimator.disableViewDuringAnimation(view: View){
