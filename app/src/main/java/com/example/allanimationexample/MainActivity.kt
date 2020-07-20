@@ -27,8 +27,22 @@ class MainActivity : AppCompatActivity() {
             btnScale.setOnClickListener {
                 scale()
             }
+            btnFade.setOnClickListener {
+                fade()
+            }
         }
 
+    }
+
+    private fun fade() {
+        val animator=ObjectAnimator.ofFloat(binding.imgStar,View.ALPHA,0f)
+        animator.apply {
+            duration=500
+            repeatCount=1
+            repeatMode=ObjectAnimator.REVERSE
+            disableViewDuringAnimation(binding.btnFade)
+            start()
+        }
     }
 
     private fun scale() {
@@ -42,19 +56,6 @@ class MainActivity : AppCompatActivity() {
             disableViewDuringAnimation(binding.btnScale)
             start()
         }
-    }
-
-    private fun ObjectAnimator.disableViewDuringAnimation(view: View){
-        addListener(object :AnimatorListenerAdapter(){
-            override fun onAnimationEnd(animation: Animator?) {
-                view.isEnabled=true
-            }
-
-            override fun onAnimationStart(animation: Animator?) {
-                view.isEnabled=false
-            }
-
-        })
     }
 
     private fun translater() {
@@ -77,5 +78,18 @@ class MainActivity : AppCompatActivity() {
             start()
         }
 
+    }
+
+    private fun ObjectAnimator.disableViewDuringAnimation(view: View){
+        addListener(object :AnimatorListenerAdapter(){
+            override fun onAnimationEnd(animation: Animator?) {
+                view.isEnabled=true
+            }
+
+            override fun onAnimationStart(animation: Animator?) {
+                view.isEnabled=false
+            }
+
+        })
     }
 }
