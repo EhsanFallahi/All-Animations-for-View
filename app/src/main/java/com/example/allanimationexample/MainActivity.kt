@@ -1,6 +1,7 @@
 package com.example.allanimationexample
 
 import android.animation.*
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -41,8 +42,11 @@ class MainActivity : AppCompatActivity() {
             btnShower.setOnClickListener {
                 shower()
             }
+            btnGoingMotionLayout.setOnClickListener {
+                val intent= Intent(this@MainActivity,ListAnimaionActivity::class.java)
+                startActivity(intent)
+            }
         }
-
     }
 
     private fun shower() {
