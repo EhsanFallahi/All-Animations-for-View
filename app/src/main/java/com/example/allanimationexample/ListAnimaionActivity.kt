@@ -34,6 +34,10 @@ class ListAnimaionActivity : AppCompatActivity() {
                 val intent= Intent(this@ListAnimaionActivity, Step_5_Activity::class.java)
                 startActivity(intent)
             }
+            btnStep6.setOnClickListener {
+                val intent= Intent(this@ListAnimaionActivity, Step_6_Activity::class.java)
+                startActivity(intent)
+            }
         }
 
 
