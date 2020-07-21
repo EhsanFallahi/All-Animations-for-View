@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.allanimationexample.activitisOfAnimations.Step_1_Activity
 import com.example.allanimationexample.activitisOfAnimations.Step_2_Activity
+import com.example.allanimationexample.activitisOfAnimations.Step_3_Activity
 import com.example.allanimationexample.databinding.ActivityListAnimaionBinding
 
 class ListAnimaionActivity : AppCompatActivity() {
@@ -21,6 +22,10 @@ class ListAnimaionActivity : AppCompatActivity() {
             }
             btnStep2.setOnClickListener {
                 val intent= Intent(this@ListAnimaionActivity, Step_2_Activity::class.java)
+                startActivity(intent)
+            }
+            btnStep3.setOnClickListener {
+                val intent= Intent(this@ListAnimaionActivity, Step_3_Activity::class.java)
                 startActivity(intent)
             }
         }
