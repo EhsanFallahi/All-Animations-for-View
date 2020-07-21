@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">AllAnimationExample</string>
+    <string name="long_text">
+Important changes since 1.0.0
+
+aosp/737190: CoordinatorLayout now implements NestedScrollingParent3 and CoordinatorLayout.Behavior implements a new overload of onNestedScroll to enable Behaviors to be able to report how much scroll distance they consume to nested scrolling children (during the dispatchNestedScroll()/onNestedScroll() pass). The previously existing onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int) has been deprecated in favor of the new onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int, int[]) and Behavior implementations should be updated accordingly. If developer code currently overrides CoordinatorLayout#onNestedScroll(View, int, int, int, int, int), it will likely no longer be called and CoordinatorLayout#onNestedScroll(View, int, int, int, int, int, int[]) should be overridden instead.
+Exposed CoordinatorLayout to accessibility services (aosp/1056175)
+The CoordinatorLayout.DefaultBehavior annotation is deprecated. Use the CoordinatorLayout.AttachedBehavior interface instead.
+        Important changes since 1.0.0
+
+aosp/737190: CoordinatorLayout now implements NestedScrollingParent3 and CoordinatorLayout.Behavior implements a new overload of onNestedScroll to enable Behaviors to be able to report how much scroll distance they consume to nested scrolling children (during the dispatchNestedScroll()/onNestedScroll() pass). The previously existing onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int) has been deprecated in favor of the new onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int, int[]) and Behavior implementations should be updated accordingly. If developer code currently overrides CoordinatorLayout#onNestedScroll(View, int, int, int, int, int), it will likely no longer be called and CoordinatorLayout#onNestedScroll(View, int, int, int, int, int, int[]) should be overridden instead.
+Exposed CoordinatorLayout to accessibility services (aosp/1056175)
+The CoordinatorLayout.DefaultBehavior annotation is deprecated. Use the CoordinatorLayout.AttachedBehavior interface instead.
+        Important changes since 1.0.0
+
+aosp/737190: CoordinatorLayout now implements NestedScrollingParent3 and CoordinatorLayout.Behavior implements a new overload of onNestedScroll to enable Behaviors to be able to report how much scroll distance they consume to nested scrolling children (during the dispatchNestedScroll()/onNestedScroll() pass). The previously existing onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int) has been deprecated in favor of the new onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int, int[]) and Behavior implementations should be updated accordingly. If developer code currently overrides CoordinatorLayout#onNestedScroll(View, int, int, int, int, int), it will likely no longer be called and CoordinatorLayout#onNestedScroll(View, int, int, int, int, int, int[]) should be overridden instead.
+Exposed CoordinatorLayout to accessibility services (aosp/1056175)
+The CoordinatorLayout.DefaultBehavior annotation is deprecated. Use the CoordinatorLayout.AttachedBehavior interface instead.
+        Important changes since 1.0.0
+
+aosp/737190: CoordinatorLayout now implements NestedScrollingParent3 and CoordinatorLayout.Behavior implements a new overload of onNestedScroll to enable Behaviors to be able to report how much scroll distance they consume to nested scrolling children (during the dispatchNestedScroll()/onNestedScroll() pass). The previously existing onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int) has been deprecated in favor of the new onNestedScroll(CoordinatorLayout, V, View, int, int, int, int, int, int[]) and Behavior implementations should be updated accordingly. If developer code currently overrides CoordinatorLayout#onNestedScroll(View, int, int, int, int, int), it will likely no longer be called and CoordinatorLayout#onNestedScroll(View, int, int, int, int, int, int[]) should be overridden instead.
+Exposed CoordinatorLayout to accessibility services (aosp/1056175)
+The CoordinatorLayout.DefaultBehavior annotation is deprecated. Use the CoordinatorLayout.AttachedBehavior interface instead.
+</string>
 </resources>

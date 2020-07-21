@@ -38,6 +38,10 @@ class ListAnimaionActivity : AppCompatActivity() {
                 val intent= Intent(this@ListAnimaionActivity, Step_6_Activity::class.java)
                 startActivity(intent)
             }
+            btnStep7.setOnClickListener {
+                val intent= Intent(this@ListAnimaionActivity, Step_7_Activity::class.java)
+                startActivity(intent)
+            }
         }
 
 
